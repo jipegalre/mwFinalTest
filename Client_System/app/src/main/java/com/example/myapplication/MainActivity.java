@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
         taskDownload = new CloadImage();
         Log.e("down", "ready");
         taskDownload.execute(site_url + "/api_root/CheckAttendance/");
-        Toast.makeText(getApplicationContext(), site_url+" /api_root/CheckAttendance/ Download", Toast.LENGTH_LONG).show();
+        //Toast.makeText(getApplicationContext(), site_url+" /api_root/CheckAttendance/ Download", Toast.LENGTH_LONG).show();
     }
     public void onClickCheckedDownload(View v){
         if (taskCheck != null && taskCheck.getStatus() == AsyncTask.Status.RUNNING) {
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
         taskCheck = new CloadChecked();
         Log.e("down", "ready");
         taskCheck.execute(site_url + "/api_root/CheckedAttendance/");
-        Toast.makeText(getApplicationContext(), site_url+"/api_root/CheckedAttendance/ Download", Toast.LENGTH_LONG).show();
+        //Toast.makeText(getApplicationContext(), site_url+"/api_root/CheckedAttendance/ Download", Toast.LENGTH_LONG).show();
     }
     public void onClickUpload(View v, String text, String name) {
         if (taskUpload != null && taskUpload.getStatus() == AsyncTask.Status.RUNNING) {
